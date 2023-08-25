@@ -6,7 +6,7 @@ const songTitle = document.querySelector('.song-title');
 const artistName = document.querySelector('.artist');
 const musicFileInput = document.getElementById('music-file');
 
-// ... (предыдущий код) ...
+
 
 themeToggle.addEventListener('click', () => {
     body.classList.toggle('dark-theme');
@@ -33,7 +33,7 @@ function checkThemePreference() {
 // Initialize theme preference on page load
 checkThemePreference();
 
-// ... (продолжение) ...
+
 
 chooseMusicBtn.addEventListener('click', () => {
     musicFileInput.click();
@@ -50,7 +50,6 @@ function loadMusic(file) {
     const musicURL = URL.createObjectURL(file);
     audioPlayer.src = musicURL;
     songTitle.textContent = file.name;
-    artistName.textContent = 'Unknown Artist'; // You can update this based on your data
+    artistName.textContent = 'Unknown Artist'; 
 }
 
-// You can continue to add more functionality to control the music player and update the UI.
